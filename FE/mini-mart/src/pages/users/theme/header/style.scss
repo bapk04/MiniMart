@@ -87,6 +87,7 @@
 
         li {
             list-style: none;
+            position: relative;
 
             a{
                 text-decoration: none;
@@ -100,9 +101,41 @@
                 display: block;
             }
         }
+
+        li:hover .header__menu__dropdowm{
+            opacity: 1;
+            visibility: visible;
+        }
+
+
         .active a{
             color: map-get($theme-colors, "main" );
 
+        }
+
+        .header__menu__dropdowm {
+            display: block;
+            position: absolute;
+            width: 180px;
+            z-index: 9;
+            padding: 5px 0;
+            transition: all 0.3s ;
+            opacity: 0;
+            visibility: hidden;
+
+            li {
+                a{
+                    text-transform: capitalize;
+                    color: white;
+                    font-weight: 400;
+                    background: #222222;
+                    padding: 5px 15px;
+                }
+
+                :hover {
+                    color: map-get($theme-colors, "main" );
+                }
+            }
         }
     }
     
@@ -146,3 +179,65 @@
         
     }
 }
+
+.hero__categories {
+    position: relative;
+
+    .hero__categories__all {
+        background: map-get($theme-colors, "main" );
+        padding: 15px 25px 15px 40px;
+        display: flex;
+        align-items: center;
+        color: #ffffff;
+        font-weight: 700;
+        cursor: pointer;
+    
+    
+        svg,
+        span {
+            font-size: 16px;      
+            margin-right: 5px;
+          
+        }
+        svg {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+
+    ul {
+        border: 1px solid #ebebeb;
+        position: absolute;
+        width: 100%;
+        background: #ffffff;
+        opacity: 1;
+        transition: all 0.3s;
+
+        li {
+            list-style: none;
+
+            a{
+                text-decoration: none;
+                background-color: transparent;
+                font-size: 16px;
+                color: map-get($theme-colors, "main" );
+                line-height: 36px;
+                display: block;
+                padding-left: 40px;
+            }
+
+            &:hover {
+                background: #f7ffff;
+
+                a{
+                    color: map-get($theme-colors, "main" );
+                }
+            }
+
+        }
+        &:hidden {
+            opacity: 0;
+        }
+    }
+}
+

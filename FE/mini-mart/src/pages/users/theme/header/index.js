@@ -1,6 +1,6 @@
 import { memo, useState} from "react"
 import "./style.scss";
-import { AiOutlineFacebook } from "react-icons/ai";
+import { AiOutlineFacebook, AiOutlineMenu } from "react-icons/ai";
 import { GrInstagram } from "react-icons/gr";
 import { LiaLinkedin } from "react-icons/lia";
 import { IoLogoTwitter } from "react-icons/io";
@@ -14,7 +14,7 @@ import { ROUTER } from "utils/router";
 
 
 const Header = () => {
-
+    const [isShowCategories,setisShowCategories] = useState(true);
     const [menus , setMenus] = useState([
         {
            name: "Trang Chủ",
@@ -104,6 +104,20 @@ const Header = () => {
                                 menus?.map((menu, menuKey) => (
                                     <li key={menuKey} className={menuKey === 0 ? "active" : "" }>
                                         <Link to={menu?.path}> {menu?.name} </Link>
+                                        {
+                                            menu.Child && (
+                                                <ul className="header__menu__dropdowm">
+                                                    {
+                                                        menu.Child.map((childItems, childKey) => (
+                                                            <li key={`{menuKey}-${childKey}`}>
+                                                                <Link to={childItems.path}>{childItems.name}</Link>
+                                                            </li>
+                                                        ))
+                                                    }
+
+                                                </ul>
+                                            )
+                                        }
                                     </li>
                                 ))                           
                             }                                                    
@@ -123,7 +137,28 @@ const Header = () => {
                 </div>
                 </div>
             </div>
-        </div>        
+        </div> 
+        <div className="container">
+            <div className="row hero__categories__container">
+                <div className="col-lg-3 hero__categories">
+                    <div className="hero__categories__all" onClick={() => setisShowCategories(!isShowCategories)}> 
+                        <AiOutlineMenu/>
+                        Danh Sách Sản Phẩm
+                    </div>
+                   {isShowCategories && (
+                    <ul className={isShowCategories ? "" : "hidden"}>                       
+                        <li><Link to={"#"}>BALI</Link></li>
+                        <li><Link to={"#"}>BALI QUỐC DÂN</Link></li>
+                        <li><Link to={"#"}>BALI CSGO</Link></li>
+                        <li><Link to={"#"}>BALI VALORANT</Link></li>
+                        <li><Link to={"#"}>BALI CUTE</Link></li>
+                        <li><Link to={"#"}>MÓC KHÓA</Link></li>
+                    </ul>
+                   )}                  
+                </div>
+                <div className="col-lg-9">Phai</div>             
+            </div>
+        </div>       
         </>   
     );
 };
