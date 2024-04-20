@@ -1,6 +1,6 @@
 import { memo, useState} from "react"
 import "./style.scss";
-import { AiOutlineFacebook, AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineFacebook, AiOutlineMenu, AiOutlinePhone } from "react-icons/ai";
 import { GrInstagram } from "react-icons/gr";
 import { LiaLinkedin } from "react-icons/lia";
 import { IoLogoTwitter } from "react-icons/io";
@@ -148,6 +148,7 @@ const Header = () => {
                    {isShowCategories && (
                     <ul className={isShowCategories ? "" : "hidden"}>                       
                         <li><Link to={"#"}>BALI</Link></li>
+                        <li><Link to={"#"}>BALI HỌC TẬP</Link></li>
                         <li><Link to={"#"}>BALI QUỐC DÂN</Link></li>
                         <li><Link to={"#"}>BALI CSGO</Link></li>
                         <li><Link to={"#"}>BALI VALORANT</Link></li>
@@ -156,7 +157,43 @@ const Header = () => {
                     </ul>
                    )}                  
                 </div>
-                <div className="col-lg-9">Phai</div>             
+                <div className="col-lg-9 hero__search__container">
+                    <div className="hero__search">
+                        <div className="hero__form">
+                            <form>
+                                <input type="text"  placeholder="Bạn Đang Tìm Gì" />
+                                    <button type="submit" >Tìm Kiếm</button>                            
+                            </form>
+                        </div>
+                        <div className="hero__phone">
+                            <div className="hero__phone__icon">
+                                <AiOutlinePhone/>
+                            </div>
+                            <div className="hero__phone__text">
+                                <p>(+84)935 769 306</p>
+                                <span>Gọi Hỗ Trợ Ngay Khi Bạn Cần!!!!</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="hero__items">
+                        <div className="hero__text">
+                            <span>  Chơi BALISONG Đón Hè sang </span>
+                            <h2> KHUYẾN MÃI THÁNG 4<br/> CHƠI BALISONG THẢ GA </h2>
+                            <h6> miễn phí ship cho đơn hàng từ 200k <br/> tặng nhiều phần quà hấp dẫn <br/> giảm ngay 30-50% nhiều mặt hàng</h6>
+                            <div className="hero__text__button">
+                                <button type="submit" >
+                                    <Link to="">BALISONG</Link>
+                                </button>
+                                <button type="submit" >
+                                    <Link to="">BALISONG VALORANT</Link>
+                                </button>
+                                <button type="submit" >
+                                    <Link to="">BALISONG HỌC TẬP</Link>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>             
             </div>
         </div>       
         </>   

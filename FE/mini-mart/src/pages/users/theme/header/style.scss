@@ -186,11 +186,13 @@
     .hero__categories__all {
         background: map-get($theme-colors, "main" );
         padding: 15px 25px 15px 40px;
+        margin-right: 10px ;
         display: flex;
         align-items: center;
         color: #ffffff;
         font-weight: 700;
         cursor: pointer;
+        border-radius: 15px;
     
     
         svg,
@@ -207,8 +209,9 @@
 
     ul {
         border: 1px solid #ebebeb;
+        border-radius: 15px;
         position: absolute;
-        width: 100%;
+        width: 96%;
         background: #ffffff;
         opacity: 1;
         transition: all 0.3s;
@@ -241,3 +244,196 @@
     }
 }
 
+.hero__search__container{
+    
+    .hero__form {
+        width: 610px;
+        height: 50px;
+        float: left;
+        margin-bottom: 30px;
+
+        form {
+            display: flex;
+            align-items: center;
+        }
+
+        input{
+            border: none;
+            height: 48px;
+            font-size: 16px;
+            color: #b2b2b2;
+            padding-left: 20px;
+            border-radius: 15px;
+            border: 1px solid #ebebeb;
+            width: 70%;
+            :focus {
+                outline: none;
+                border: none;
+    
+            }
+        }
+
+        button {
+            font-size: 14px;
+            color: #ffffff;
+            font-weight: 800;
+            text-transform:uppercase ;
+            display: inline-block;
+            padding: 16px 30px 17px;
+            background: map-get($theme-colors, "main" );
+            border: none;
+            border-radius: 15px;
+            height: 100%;
+        }
+    }
+
+    .hero__phone {
+        display: flex;
+        align-items: center;
+
+        .hero__phone__icon{
+            font-size: 25px;
+            padding: 10px;
+            background:#f5f5f5;
+            text-align: center;
+            border-radius: 50%;
+            float: left;
+            margin-right: 20px ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            color: map-get($theme-colors, "main" );
+
+        }
+
+        .hero__phone__text {
+            display: inline-block;
+
+            p{
+                color: map-get($theme-colors, "normal-text" );
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+            span{
+                font-size: 14px;
+                color: #6f6f6f;
+            }
+        }
+    }
+
+    .hero__items{
+        width: 100%;
+        background-image: url("https://th.bing.com/th/id/OIP.OjyWZthszkGBf6usO7aSzgHaE8?rs=1&pid=ImgDetMain");
+        // background-repeat: no-repeat;
+        background-size:cover ;
+        height: 410px;
+        display: flex;
+        align-items: center;
+        // padding-left: 75px;
+        margin-left: 15px;
+
+        .hero__text{
+            padding-left: 75px;
+
+            span{
+                font-size: 14px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                text-transform: uppercase;
+                font-weight: 700;
+                letter-spacing: 4px;
+                color: map-get($theme-colors, "main" );
+
+            }
+
+            h2{
+                font-size: 45px;
+                text-transform: uppercase;
+                font-weight: 600;
+                line-height: 52px;
+                color: map-get($theme-colors, "main" );
+                margin: 10px 0;
+            }
+
+            h6{
+                font-size: 16px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                text-transform: uppercase;
+                font-weight: 700;
+                letter-spacing: 4px;
+                color: map-get($theme-colors, "main" );
+            }
+
+            .hero__text__button{
+                margin-top: 25px;
+                display: flex;
+                flex-wrap: wrap;
+                column-gap: 25px;
+
+
+                button{
+
+                    appearance: none;
+                    backface-visibility: hidden;
+                    background-color: #ffffff;
+                    border-radius: 8px;
+                    border-style: none;
+                    box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
+                    box-sizing: border-box;
+                    color: #fff;
+                    cursor: pointer;
+                    display: inline-block;
+                    font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+                    font-size: 16px;
+                    font-weight: 600;
+                    letter-spacing: normal;
+                    line-height: 1.5;
+                    outline: none;
+                    overflow: hidden;
+                    padding: 13px 20px;
+                    position: relative;
+                    text-align: center;
+                    text-decoration: none;
+                    transform: translate3d(0, 0, 0);
+                    transition: all .3s;
+                    user-select: none;
+                    -webkit-user-select: none;
+                    touch-action: manipulation;
+                    vertical-align: top;
+                    white-space: nowrap;
+
+                        
+                    a{
+                        text-decoration: none;
+                        color: map-get($theme-colors, "main" );
+                    }
+                }
+                button:hover{
+                    background-color: #1e8449;
+
+                    
+                    opacity: 1;
+                    transform: translateY(0);
+                    transition-duration: .35s;
+                    box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
+                    a{
+                        text-decoration: none;
+                        color: #ffffff;
+                    }
+                }
+
+                button:active{
+                    transform: translateY(2px);
+                    transition-duration: .35s;
+                }
+
+
+            }
+
+            
+
+        }
+       
+    }
+ 
+}
