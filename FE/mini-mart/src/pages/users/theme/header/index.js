@@ -22,11 +22,6 @@ const Header = () => {
         },
 
         {
-            name: "Cửa Hàng",
-             path: ROUTER.USER.PRODUCTS,
-        },
-
-        {
             name: "Sản Phẩm",
              path: "",
              iShowSubmenu: false,
@@ -45,6 +40,27 @@ const Header = () => {
                 },
 
              ],
+        },
+
+        {
+            name: "Phụ Kiện",
+            path: "",
+            iShowSubmenu: false,
+            Child: [
+               {
+                   name:"Thịt",
+                   path: "",
+               },
+               {
+                   name:"Rau Củ",
+                   path: "",
+               },
+               {
+                   name:"Thức Ăn Nhanh",
+                   path: "",
+               },
+
+            ],
         },
 
         {
