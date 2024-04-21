@@ -106,7 +106,7 @@
 
     .featured__item{
         margin-bottom: 50px;
-        margin-left:  25px; 
+        margin-left:  38px; 
 
         &:hover{
             .featured__item__pic__hover{
@@ -170,26 +170,41 @@
             text-align: center;
            
 
-            h6{
+            h6 {
                 margin-top: 10px;
                 font-size: 16px;
                 font-weight: 400;
-
-                a{
+            
+                a {
                     color: map-get($theme-colors , "main" );
                     text-decoration: none;
+                    transition: color 0.5s ease; /* Thêm hiệu ứng chuyển đổi màu sắc */
+            
+                    &:hover {
+                        color: map-get($theme-colors , "secondary" ); /* Thay đổi màu sắc khi di chuột qua */
+                    }
                 }
             }
-            h5{
+            h5 {
                 margin-top: 10px;
                 font-size: 16px;
                 font-weight: 400;
-                border:  1px solid#1acc23;
-
-                a{
+                border: 1px solid #1acc23;
+                transition: box-shadow 0.3s ease, transform 0.3s ease; /* Thêm hiệu ứng chuyển đổi đổ bóng và biến đổi */
+            
+                &:hover {
+                    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Thêm đổ bóng khi di chuột qua */
+                    transform: scale(1.05); /* Tăng kích thước khi di chuột qua */
+                }
+            
+                a {
                     color: map-get($theme-colors , "main" );
                     text-decoration: none;
-                    
+                    transition: color 0.5s ease; /* Thêm hiệu ứng chuyển đổi màu sắc */
+            
+                    &:hover {
+                        color: map-get($theme-colors , "secondary" ); /* Thay đổi màu sắc khi di chuột qua */
+                    }
                 }
             }
         }

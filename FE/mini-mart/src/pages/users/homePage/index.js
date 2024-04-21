@@ -75,7 +75,7 @@ const HomePage = () => {
         products:[
 
           {
-            img: feat1,
+            img: feat2,
             name: "Siêu Hot",
             price: 50000,
           },
@@ -86,6 +86,11 @@ const HomePage = () => {
           },
           {
             img: feat4,
+            name: "Siêu Sieu Hot Hòn Họt",
+            price: 50000,
+          },
+          {
+            img: feat8,
             name: "Siêu Sieu Hot Hòn Họt",
             price: 50000,
           },
@@ -177,6 +182,30 @@ const HomePage = () => {
                   <Link to="">{items.price}</Link>
                 </h5>
               </div>
+              
+            </div>
+            <div className="featured__item">
+              <div className="featured__item__pic" style={{
+                backgroundImage: `url(${items.img})`,
+              }}>
+                <ul className="featured__item__pic__hover">
+                  <li>
+                    <AiOutlineEye />
+                  </li>
+                  <li>
+                    <AiOutlineShoppingCart />
+                  </li>                
+                </ul>                
+              </div>
+              <div className="featured__item__text">
+                <h6>
+                  <Link to="">{items.name}</Link>
+                </h6>
+                <h5>
+                  <Link to="">{items.price}</Link>
+                </h5>
+              </div>
+              
             </div>
 
           </div>
@@ -243,7 +272,7 @@ const HomePage = () => {
           <div className="container">
             <div className="featured">
               <div className="section-title">
-                <h2>Sản Phẩm Nổi Bậc</h2>
+                <h2>Sản Phẩm Nổi Bật</h2>
                 
               </div>
                 {renderFeatureProducts(featProduct)}
