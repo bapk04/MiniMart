@@ -27,15 +27,15 @@ const Header = () => {
              iShowSubmenu: false,
              Child: [
                 {
-                    name:"Thịt",
+                    name:"Bali NewBie",
                     path: "",
                 },
                 {
-                    name:"Rau Củ",
+                    name:"Bali Valorant",
                     path: "",
                 },
                 {
-                    name:"Thức Ăn Nhanh",
+                    name:"Bali csgo",
                     path: "",
                 },
 
@@ -48,15 +48,15 @@ const Header = () => {
             iShowSubmenu: false,
             Child: [
                {
-                   name:"Thịt",
+                   name:"Móc khóa",
                    path: "",
                },
                {
-                   name:"Rau Củ",
+                   name:"bảo Dưỡng",
                    path: "",
                },
                {
-                   name:"Thức Ăn Nhanh",
+                   name:"STICkER",
                    path: "",
                },
 
