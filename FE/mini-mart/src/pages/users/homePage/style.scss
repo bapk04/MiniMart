@@ -2,60 +2,52 @@
 @import "style/pages/all.scss";
 
 .container__categories_slider {
-    max-width: 1200px !important;
+    max-width: 1230px !important;
     margin-top: 30px !important;
+    margin-left: 18%;
 
-
-    .categories_slider{
-         
-        .categories_slider_items{
-            height: 500px;          
+    .categories_slider {
+        .categories_slider_items {
+            height: 500px;
             position: relative;
             background-repeat: no-repeat;
-            background-size: cover;
-            background-position:top center;
+            background-size: 350px;
+            background-position: top center;
             border-radius: 5px;
             overflow: hidden;
-            
-            p{
-                position: absolute ;
-                 left: 10% ;
-                 bottom: 10px;
-                text-align: center;
-                font-size: 18px;
-                color: rgb(237 237 237);
-                font-weight: 600;
-                text-transform: uppercase;
-                letter-spacing: 2px;
-                padding: 10px 0 10px;
-                width: 250px;
-                cursor: pointer;
-                
+            transition: transform 0.5s ease; /* Thêm hiệu ứng chuyển đổi */
+            cursor: pointer;
 
-                &:hover{
-                    background: map-get($theme-colors, "main" );
+            &:hover {
+                transform: scale(0.85); /* Thu nhỏ hình ảnh khi di chuột qua */
+                p {
+                    background: map-get($theme-colors, "main");
                     color: rgb(237 237 237);
-                    border-radius: 50px;
-
-        
-    }
+                    bottom: -12px;
+                }
             }
-
-
-
-           
-    } 
-        
-        // .react-multi-carousel-item{
-        //     width:270px ;
-        // }
-        .react-multi-carousel-item:not(:first-child):not(:last-child){
-                margin-right: 1px;
-                margin-left: 1px;
-                padding: 0 3px 0 3px;
-                
         }
-       
+    }
+
+    p {
+        position: absolute;
+        left: 10%;
+        bottom: 10px;
+        text-align: center;
+        font-size: 18px;
+        color: transparent;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding: 10px 0 10px;
+        width: 250px;
+
+        &:hover {
+            background: map-get($theme-colors, "main");
+            color: rgb(237 237 237);
+            border-radius: 50px;
+            bottom: -10px;
+        }
     }
 }
 
@@ -107,11 +99,14 @@
     .featured__item{
         margin-bottom: 50px;
         margin-left:  38px; 
+        transition: transform 0.3s ease;
 
         &:hover{
             .featured__item__pic__hover{
                 bottom: -15%  !important;
+                
             }
+            transform: scale(0.95);
         }
 
         .featured__item__pic{
@@ -120,13 +115,10 @@
             overflow: hidden;
             background-position:center ;
 
-           
-           
-          
-
-            // .backgroundImage{
-            //     width: 250px;
-            //     height: 250px;
+            // hover ảnh feature
+            // làm thế nào để viết js trong css
+            // .featured__item__pic.default-img:hover {
+            //     background-image: url(${items.hoverImg});
             // }
 
             .featured__item__pic__hover{
@@ -213,18 +205,34 @@
 }
 
 
-.banner{
+.banner {
     margin-left: 10%;
     display: flex;
-    gap: 30px  ;
+    gap: 30px;
     margin-bottom: 30px;
-   
 
-    // .baner__pic{
-    //     image{
-    //         border-radius: 20px;
-    //     };
-    // }
-    
+    .banner__pic {
+        position: relative;
+        width: 500px; /* Đặt chiều rộng tùy chỉnh */
+        height: 300px; /* Đặt chiều cao tùy chỉnh */
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transition: opacity 1s ease-in-out;
+            border-radius: 20px; /* Thêm bo góc cho hình ảnh */
+
+            &:hover {
+                opacity: 0;
+            }
+        }
+
+        .top:hover {
+            opacity: 0;
+        }
+    }
 }
+
 
