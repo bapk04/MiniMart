@@ -13,7 +13,7 @@
             background-repeat: no-repeat;
             background-size: 350px;
             background-position: top center;
-            border-radius: 5px;
+            border-radius: 10px;
             overflow: hidden;
             transition: transform 0.5s ease; /* Thêm hiệu ứng chuyển đổi */
             cursor: pointer;
@@ -99,7 +99,8 @@
     .featured__item{
         margin-bottom: 50px;
         margin-left:  38px; 
-        transition: transform 0.3s ease;
+        transition: transform 0.4s ease;
+        
 
         &:hover{
             .featured__item__pic__hover{
@@ -114,6 +115,8 @@
             position: relative;
             overflow: hidden;
             background-position:center ;
+            border-radius: 10px;
+            background-image: cover;
 
             // hover ảnh feature
             // làm thế nào để viết js trong css

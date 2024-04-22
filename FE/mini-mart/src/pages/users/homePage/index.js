@@ -197,7 +197,7 @@ const HomePage = () => {
             </div>
             <div className="featured__item">
               <div className="featured__item__pic" style={{
-                backgroundImage: `url(${items.img})`,
+                backgroundImage: `url(${items.hoverImg})`,
               }}>
                 <ul className="featured__item__pic__hover">
                   <li>

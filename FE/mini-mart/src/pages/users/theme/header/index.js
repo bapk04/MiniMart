@@ -77,12 +77,9 @@ const Header = () => {
 
     // Mảng chứa các URL hình ảnh
 const images = [
-
     "https://www.pcgamesn.com/wp-content/sites/pcgamesn/2022/09/Valorant-Riot-approved-butterfly-knife-tricks.jpg",
-    "https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2Fd8x7uii1nv901.jpg",
-    "https://www.kopazar.com/upload/editor/image(226).png",
-    
-
+    "https://cdn.esportsdriven.com/media/upload/images/recon_balisong.large.png",
+    "https://valorantstrike.com/wp-content/uploads/2021/08/Valorant-Recon-Collection-Knife-Red-Variant.jpg",
 ];
 
 let i = 0;
@@ -90,7 +87,7 @@ setInterval(() => {
     // Thay đổi hình ảnh nền của .hero__items sau mỗi 2 giây
     document.querySelector(".hero__items").style.backgroundImage = `url(${images[i]})`;
     i = (i + 1) % images.length; // quay lại đầu mảng khi đến cuối
-}, 500);
+}, 2000);
 
     return (
         <>
