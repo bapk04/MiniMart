@@ -177,13 +177,13 @@ setInterval(() => {
                     </div>
                    {isShowCategories && (
                     <ul className={isShowCategories ? "" : "hidden"}>                       
-                        <li><Link to={"#"}>BALI</Link></li>
-                        <li><Link to={"#"}>BALI HỌC TẬP</Link></li>
-                        <li><Link to={"#"}>BALI QUỐC DÂN</Link></li>
-                        <li><Link to={"#"}>BALI CSGO</Link></li>
-                        <li><Link to={"#"}>BALI VALORANT</Link></li>
-                        <li><Link to={"#"}>BALI CUTE</Link></li>
-                        <li><Link to={"#"}>MÓC KHÓA</Link></li>
+                        <li><Link to={ROUTER.USER.PRODUCTS.BALISONG_NEW_BIE}>BALI</Link></li>
+                        <li><Link to={ROUTER.USER.PRODUCTS.BALISONG_NEW_BIE}>BALI HỌC TẬP</Link></li>
+                        <li><Link to={ROUTER.USER.PRODUCTS.BALISONG_NEW_BIE}>BALI QUỐC DÂN</Link></li>
+                        <li><Link to={ROUTER.USER.PRODUCTS.BALISONG_CS_GO}>BALI CSGO</Link></li>
+                        <li><Link to={ROUTER.USER.PRODUCTS.BALISONG_VALORANT}>BALI VALORANT</Link></li>
+                        <li><Link to={ROUTER.USER.PRODUCTS.MOC_KHOA}>BALI CUTE</Link></li>
+                        <li><Link to={ROUTER.USER.PRODUCTS.MOC_KHOA}>MÓC KHÓA</Link></li>
                     </ul>
                    )}                  
                 </div>
@@ -215,7 +215,7 @@ setInterval(() => {
                                     <Link to="">BALISONG</Link>
                                 </button>
                                 <button type="submit" >
-                                    <Link to="">BALISONG VALORANT</Link>
+                                    <Link to="ROUTER.USER.PRODUCTS.BALISONG_VALORANT">BALISONG VALORANT</Link>
                                 </button>
                                 <button type="submit" >
                                     <Link to="">BALISONG HỌC TẬP</Link>

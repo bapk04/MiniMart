@@ -5,6 +5,7 @@ import { AiOutlineFacebook } from "react-icons/ai";
 import { GrInstagram } from "react-icons/gr";
 import { LiaLinkedin } from "react-icons/lia";
 import { IoLogoTwitter } from "react-icons/io";
+import { ROUTER } from "utils/router";
 
 
 const Footer = () => {
@@ -32,7 +33,7 @@ const Footer = () => {
                                 <Link to="/about">Thông Tin Về Chúng Tôi</Link>
                             </li>
                             <li>
-                                <Link to="/products">Sản Phẩm Kinh Doanh</Link>
+                                <Link to={ROUTER.USER.PRODUCTS.MAIN}>Sản Phẩm Kinh Doanh</Link>
                             </li>
                         </ul>
                         <ul>
