@@ -215,7 +215,7 @@ setInterval(() => {
                                     <Link to="">BALISONG</Link>
                                 </button>
                                 <button type="submit" >
-                                    <Link to="ROUTER.USER.PRODUCTS.BALISONG_VALORANT">BALISONG VALORANT</Link>
+                                    <Link to={ROUTER.USER.PRODUCTS.BALISONG_VALORANT}>BALISONG VALORANT</Link>
                                 </button>
                                 <button type="submit" >
                                     <Link to="">BALISONG HỌC TẬP</Link>
