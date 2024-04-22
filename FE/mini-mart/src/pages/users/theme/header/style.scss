@@ -324,7 +324,7 @@
 
     .hero__items{
         width: 100%;
-        //background-image: url("https://www.pcgamesn.com/wp-content/sites/pcgamesn/2022/09/Valorant-Riot-approved-butterfly-knife-tricks.jpg");
+        background-image: url("https://www.pcgamesn.com/wp-content/sites/pcgamesn/2022/09/Valorant-Riot-approved-butterfly-knife-tricks.jpg");
         //background-repeat: no-repeat;
         background-size:cover ;
         height: 410px;
@@ -332,6 +332,8 @@
         align-items: center;
         // padding-left: 75px;
         margin-left: 15px;
+        transition: background-image 2s ease-in-out;
+
 
         .hero__text{
             padding-left: 75px;
@@ -433,7 +435,10 @@
             
 
         }
+
+       
+     
        
     }
- 
+    
 }

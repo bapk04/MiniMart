@@ -23,20 +23,20 @@ const Header = () => {
 
         {
             name: "Sản Phẩm",
-             path: "",
+             path: ROUTER.USER.PRODUCTS.MAIN,
              iShowSubmenu: false,
              Child: [
                 {
                     name:"Bali NewBie",
-                    path: "",
+                    path: ROUTER.USER.PRODUCTS.BALISONG_NEW_BIE,
                 },
                 {
                     name:"Bali Valorant",
-                    path: "",
+                    path: ROUTER.USER.PRODUCTS.BALISONG_VALORANT,
                 },
                 {
                     name:"Bali csgo",
-                    path: "",
+                    path: ROUTER.USER.PRODUCTS.BALISONG_CS_GO,
                 },
 
              ],
@@ -44,20 +44,20 @@ const Header = () => {
 
         {
             name: "Phụ Kiện",
-            path: "",
+            path: ROUTER.USER.PRODUCTS.MAIN,
             iShowSubmenu: false,
             Child: [
                {
                    name:"Móc khóa",
-                   path: "",
+                   path: ROUTER.USER.PRODUCTS.MOC_KHOA,
                },
                {
                    name:"bảo Dưỡng",
-                   path: "",
+                   path: ROUTER.USER.PRODUCTS.BAO_DUONG,
                },
                {
                    name:"STICkER",
-                   path: "",
+                   path: ROUTER.USER.PRODUCTS.STICKER,
                },
 
             ],
@@ -87,7 +87,7 @@ setInterval(() => {
     // Thay đổi hình ảnh nền của .hero__items sau mỗi 2 giây
     document.querySelector(".hero__items").style.backgroundImage = `url(${images[i]})`;
     i = (i + 1) % images.length; // quay lại đầu mảng khi đến cuối
-}, 2000);
+}, 5000);
 
     return (
         <>
