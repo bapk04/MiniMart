@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/bapk04/MiniMart/static/css/main.e4b97700.css",
-    "main.js": "/bapk04/MiniMart/static/js/main.147927ce.js",
-    "static/media/feat-4.webp": "/bapk04/MiniMart/static/media/feat-4.982f305575046f8bdcfa.webp",
-    "static/media/feat-5.webp": "/bapk04/MiniMart/static/media/feat-5.e41791d1541cec634977.webp",
-    "static/media/feat-7.webp": "/bapk04/MiniMart/static/media/feat-7.fa2c6de41a6e9fb6ad9a.webp",
-    "static/media/feat-8.webp": "/bapk04/MiniMart/static/media/feat-8.fa2c6de41a6e9fb6ad9a.webp",
-    "static/media/feat-3.webp": "/bapk04/MiniMart/static/media/feat-3.9c311fe196bec90ea09f.webp",
-    "static/media/feat-6.webp": "/bapk04/MiniMart/static/media/feat-6.d72401aac615897dea73.webp",
-    "static/media/feat-2.webp": "/bapk04/MiniMart/static/media/feat-2.bdf61f088000f4ac1e5f.webp",
-    "static/media/revicons.eot": "/bapk04/MiniMart/static/media/revicons.a77de540a38981833f9e.eot",
-    "static/media/revicons.ttf": "/bapk04/MiniMart/static/media/revicons.57fd05d4ae650374c8de.ttf",
-    "static/media/revicons.woff": "/bapk04/MiniMart/static/media/revicons.e8746a624ed098489406.woff",
-    "static/media/feat-1.webp": "/bapk04/MiniMart/static/media/feat-1.8693bedeed516c054316.webp",
-    "index.html": "/bapk04/MiniMart/index.html",
-    "main.e4b97700.css.map": "/bapk04/MiniMart/static/css/main.e4b97700.css.map",
-    "main.147927ce.js.map": "/bapk04/MiniMart/static/js/main.147927ce.js.map"
+    "main.css": "/bapk04/MiniMart/tree/main/FE/mini-mart/static/css/main.9a7ff770.css",
+    "main.js": "/bapk04/MiniMart/tree/main/FE/mini-mart/static/js/main.7a2cb419.js",
+    "static/media/feat-4.webp": "/bapk04/MiniMart/tree/main/FE/mini-mart/static/media/feat-4.982f305575046f8bdcfa.webp",
+    "static/media/feat-5.webp": "/bapk04/MiniMart/tree/main/FE/mini-mart/static/media/feat-5.e41791d1541cec634977.webp",
+    "static/media/feat-7.webp": "/bapk04/MiniMart/tree/main/FE/mini-mart/static/media/feat-7.fa2c6de41a6e9fb6ad9a.webp",
+    "static/media/feat-8.webp": "/bapk04/MiniMart/tree/main/FE/mini-mart/static/media/feat-8.fa2c6de41a6e9fb6ad9a.webp",
+    "static/media/feat-3.webp": "/bapk04/MiniMart/tree/main/FE/mini-mart/static/media/feat-3.9c311fe196bec90ea09f.webp",
+    "static/media/feat-6.webp": "/bapk04/MiniMart/tree/main/FE/mini-mart/static/media/feat-6.d72401aac615897dea73.webp",
+    "static/media/feat-2.webp": "/bapk04/MiniMart/tree/main/FE/mini-mart/static/media/feat-2.bdf61f088000f4ac1e5f.webp",
+    "static/media/revicons.eot": "/bapk04/MiniMart/tree/main/FE/mini-mart/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/bapk04/MiniMart/tree/main/FE/mini-mart/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/bapk04/MiniMart/tree/main/FE/mini-mart/static/media/revicons.e8746a624ed098489406.woff",
+    "static/media/feat-1.webp": "/bapk04/MiniMart/tree/main/FE/mini-mart/static/media/feat-1.8693bedeed516c054316.webp",
+    "index.html": "/bapk04/MiniMart/tree/main/FE/mini-mart/index.html",
+    "main.9a7ff770.css.map": "/bapk04/MiniMart/tree/main/FE/mini-mart/static/css/main.9a7ff770.css.map",
+    "main.7a2cb419.js.map": "/bapk04/MiniMart/tree/main/FE/mini-mart/static/js/main.7a2cb419.js.map"
   },
   "entrypoints": [
-    "static/css/main.e4b97700.css",
-    "static/js/main.147927ce.js"
+    "static/css/main.9a7ff770.css",
+    "static/js/main.7a2cb419.js"
   ]
 }
