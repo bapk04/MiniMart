@@ -27,10 +27,10 @@ const Footer = () => {
                         <h6>Cửa Hàng</h6>
                         <ul>
                             <li>
-                                <Link to="/contact">Liên Hệ</Link>
+                                <Link to="#">Liên Hệ</Link>
                             </li>
                             <li>
-                                <Link to="/about">Thông Tin Về Chúng Tôi</Link>
+                                <Link to="#">Thông Tin Về Chúng Tôi</Link>
                             </li>
                             <li>
                                 <Link to={ROUTER.USER.PRODUCTS.MAIN}>Sản Phẩm Kinh Doanh</Link>
@@ -38,13 +38,13 @@ const Footer = () => {
                         </ul>
                         <ul>
                             <li>
-                                <Link to="/account">Thông Tin Tài khoản</Link>
+                                <Link to="#">Thông Tin Tài khoản</Link>
                             </li>
                             <li>
-                                <Link to="/cart">Giỏ Hàng</Link>
+                                <Link to="#">Giỏ Hàng</Link>
                             </li>
                             <li>
-                                <Link to="/wishlist">Danh Sách Ưa Thích</Link>
+                                <Link to="#">Danh Sách Ưa Thích</Link>
                             </li>
                         </ul>
                     </div>

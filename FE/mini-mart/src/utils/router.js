@@ -11,5 +11,7 @@ export const ROUTER = {
             STICKER: "/san-pham/sticker",
             // thêm các đường dẫn khác tại đây
         },
+        POST: "/bai-dang",
+        CONTACT: "lien-he",
     },
 };

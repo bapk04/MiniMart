@@ -65,12 +65,12 @@ const Header = () => {
 
         {
             name: "Bài Viết",
-             path: "",
+             path: ROUTER.USER.POST,
         },
 
         {
             name: "Liên Hệ",
-             path: "",
+             path: ROUTER.USER.CONTACT,
         },
     
     ]);

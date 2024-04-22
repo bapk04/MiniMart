@@ -9,6 +9,8 @@ import Balicsgo from "pages/users/balicsgo";
 import Mockhoa from "pages/users/mockhoa";
 import Baoduong from "pages/users/baoduong";
 import Sticker from "pages/users/sticker";
+import Baiviet from "pages/users/baiviet";
+import Lienhe from "pages/users/lienhe";
 
 
 const renderUserRouter = () => {
@@ -45,6 +47,14 @@ const renderUserRouter = () => {
         {
             path: ROUTER.USER.PRODUCTS.STICKER,
             component: <Sticker /> 
+        },
+        {
+            path: ROUTER.USER.POST,
+            component: <Baiviet /> 
+        },
+        {
+            path: ROUTER.USER.CONTACT,
+            component: <Lienhe /> 
         },
     ];
 
