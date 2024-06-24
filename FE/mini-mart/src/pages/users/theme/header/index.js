@@ -1,11 +1,12 @@
 import { memo, useState} from "react"
 import "./style.scss";
-import { AiOutlineFacebook, AiOutlineMenu, AiOutlinePhone } from "react-icons/ai";
+import { BiUser } from "react-icons/bi";
+import { AiOutlineDownCircle, AiOutlineUpCircle, AiOutlineFacebook, AiOutlineMenu, AiOutlinePhone } from "react-icons/ai";
 import { GrInstagram } from "react-icons/gr";
 import { LiaLinkedin } from "react-icons/lia";
 import { IoLogoTwitter } from "react-icons/io";
 import { FaRegUser } from "react-icons/fa";
-import { MdMailOutline } from "react-icons/md";
+import {MdEmail, MdMailOutline } from "react-icons/md";
 import { Link } from 'react-router-dom';
 import { formatter } from 'utils/formatter.js';
 import { AiOutlineShoppingCart } from "react-icons/ai";
@@ -15,6 +16,8 @@ import { ROUTER } from "utils/router";
 
 const Header = () => {
     const [isShowCategories,setisShowCategories] = useState(true);
+    const [isShowHumberger,setisShowHumberger] = useState(false);
+
     const [menus , setMenus] = useState([
         {
            name: "Trang Chủ",
@@ -91,6 +94,83 @@ setInterval(() => {
 
     return (
         <>
+        <div
+            className={ `humberger__menu__overlayer ${isShowHumberger ? "active" : ""}`}
+            onClick={() => setisShowHumberger(false)}
+        />
+
+        <div className={ `humberger__menu__wrapper ${isShowHumberger ? "show" : ""}`}>
+            <div className="header__logo">
+                <h1>Balisong shop</h1>
+            </div>
+            <div className="humberger__menu__cart">
+                <ul>
+                    <li>
+            <Link to={""}>
+            <AiOutlineShoppingCart/> <span>1</span>
+            </Link>
+                    </li>
+                </ul>
+            <div className="header__cart__price">
+                 Gio Hang: <span>{formatter(1000123)}</span>
+                </div>  
+            </div>
+            <div className="humberger__menu__widget">
+                <div className="header__top__right__auth">
+                <Link to={""}>
+                <BiUser/> DANG NHAP
+                </Link>
+                </div>
+            </div>
+             <div className="humberger__menu__navbar">
+                <ul>
+                    {menus.map((menu, menuKey) => (
+                    <li key={menuKey} onTouchEnd={menu.path}> 
+                        <Link
+                            to={menu.path}    
+                            onClick={() => {
+                                const newMenus = [...menus];
+                                newMenus[menuKey].iShowSubmenu = !newMenus[menuKey].iShowSubmenu;
+                                setMenus(newMenus);
+                            }}                     
+                         >
+                        {menu.name}
+                        {menu.Child && (menu.iShowSubmenu ? (
+                            <AiOutlineDownCircle/>
+                        ) : (
+                            <AiOutlineUpCircle />
+                        ))}
+                        </Link>
+                        {menu.Child && (
+                            <ul className={`header__menu__drop ${menu.iShowSubmenu ? "show__submenu" : ""}`}>
+                                {menu.Child.map((childItems, childKey) => (
+                                    <li key={`${menuKey}-${childKey}`}>
+                                        <Link to={childItems.path}>{childItems.name}</Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        )}
+                    </li>
+                    ))}
+                </ul>
+             </div>
+             <div className="header__top__right__social">
+                            <Link to={"https://www.facebook.com/"}><AiOutlineFacebook /></Link>
+                            <Link to={"https://www.instagram.com/"}><GrInstagram /></Link>
+                            <Link to={""}><LiaLinkedin /></Link>
+                            <Link to={""}><IoLogoTwitter /></Link>
+                            <Link to={""}><FaRegUser /></Link><span>Đăng nhập</span>                
+             </div>
+             <div className="humberger__menu__contact">
+                <ul>
+                    <li>
+                        <MdEmail/> ngogiakiet20012004@gmail.com
+                    </li>
+                    <li>Mien Phi don tu {formatter(200000)}</li>
+                </ul>
+             </div>
+        </div>
+             
         <div className="header_top">
         <div className="container"> 
             <div className="row">
@@ -122,12 +202,12 @@ setInterval(() => {
 
         <div className="container">
             <div className="row"> 
-                <div className="col-xl-3 col-lg-3">
+                <div className="col-lg-3">
                      <div className="header__logo">
                         <h1>Bali Song</h1>
                      </div>
                 </div>
-                <div className="col-xl-6 col-lg-3">
+                <div className=" col-lg-12">
                     <nav className="header__menu">
                         <ul>
                             {
@@ -154,7 +234,7 @@ setInterval(() => {
                         </ul>
                     </nav>
                 </div>
-                <div className="col-xl-3 col-lg-3">
+                <div className=" col-lg-3">
                 <div className="header__cart">
                     <div className="header__cart__price">
                         <span>{formatter(1001230)}</span> 
@@ -165,6 +245,13 @@ setInterval(() => {
                         </li> 
                     </ul>
                 </div>
+                    <div className="humberger__open">
+                            <AiOutlineMenu
+                           onClick={() => 
+                            setisShowHumberger(true)
+                           }                           
+                      />
+                    </div>
                 </div>
             </div>
         </div> 
